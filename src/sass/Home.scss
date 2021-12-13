@@ -1,0 +1,127 @@
+.book-count-sort-container {
+    display: flex;
+    flex-direction: row;
+    width: 1012px;
+    height: 60px;
+    padding-left: 177px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.book-count-container {
+    display: flex;
+    width: 130px;
+    height: 27px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title {
+    text-align: left;
+    font: normal normal normal 24px Roboto;
+    letter-spacing: 0px;
+    color: #0A0102;
+    opacity: 1;
+}
+
+.sub-title {
+    align-self: center;
+    text-align: left;
+    font: normal normal normal 13px Roboto;
+    letter-spacing: 0px;
+    color: #878787;
+    opacity: 1;
+}
+
+.book-card-display-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 1012px;
+    padding-left: 177px;
+    justify-content: space-between;
+}
+
+@media(max-width: 475px) and (min-width: 320px) {
+    .book-count-sort-container {
+        display: flex;
+        flex-direction: row;
+        width: 255px;
+        height: 40px;
+        padding-left: 30px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .book-count-container {
+        display: flex;
+        width: 100px;
+        height: 20px;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .title {
+        text-align: left;
+        font: normal normal normal 14px Roboto;
+        letter-spacing: 0px;
+        color: #0A0102;
+        opacity: 1;
+    }
+    .sub-title {
+        align-self: center;
+        text-align: left;
+        font: normal normal normal 13px Roboto;
+        letter-spacing: 0px;
+        color: #878787;
+        opacity: 1;
+    }
+    .book-card-display-container {
+        display: flex;
+        flex-direction: column;
+        width: 255px;
+        padding-left: 30px;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+@media(max-width: 900px) and (min-width: 768px) {
+    .book-count-sort-container {
+        display: flex;
+        flex-direction: row;
+        width: 568px;
+        height: 60px;
+        padding-left: 100px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .book-count-container {
+        display: flex;
+        width: 130px;
+        height: 27px;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .title {
+        text-align: left;
+        font: normal normal normal 22px Roboto;
+        letter-spacing: 0px;
+        color: #0A0102;
+        opacity: 1;
+    }
+    .sub-title {
+        align-self: center;
+        text-align: left;
+        font: normal normal normal 13px Roboto;
+        letter-spacing: 0px;
+        color: #878787;
+        opacity: 1;
+    }
+    .book-card-display-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 568px;
+        padding-left: 100px;
+        justify-content: space-evenly;
+    }
+}

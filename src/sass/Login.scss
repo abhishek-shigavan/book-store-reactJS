@@ -1,0 +1,106 @@
+@mixin footer-button {
+    height: 37px;
+    border-radius: 3px;
+    opacity: 1;
+    outline: none;
+    border: none;
+    text-align: center;
+    font: normal normal normal 15px/20px Roboto;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+@mixin input-label {
+    align-self: flex-start;
+    height: 15px;
+    text-align: left;
+    font: normal normal normal 12px Roboto;
+    letter-spacing: 0px;
+    color: #0A0102;
+    text-transform: capitalize;
+    opacity: 1;
+}
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    width: 253px;
+    height: 340px;
+    padding: 0px 0px;
+    padding-bottom: 24px;
+    justify-content: space-evenly;
+}
+
+.login-input {
+    display: flex;
+    flex-direction: column;
+    width: 252px;
+    height: 50px;
+    label {
+        @include input-label;
+    }
+}
+
+.login-input-forgot-container {
+    display: flex;
+    flex-direction: column;
+    width: 252px;
+    height: 75px;
+    label {
+        @include input-label;
+    }
+}
+
+.forgot-button {
+    align-self: flex-end;
+    width: 120px;
+    height: 20px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: #9D9D9D;
+    opacity: 1;
+}
+
+.content-login-button {
+    @include footer-button;
+    width: 252px;
+    background: #A03037 0% 0% no-repeat padding-box;
+    text-align: center;
+    font: normal normal normal 15px/20px Roboto;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+.footer-label {
+    align-self: center;
+    text-align: left;
+    font: normal normal bold 14px/18px Meiryo UI;
+    letter-spacing: 0px;
+    color: #343434;
+    text-transform: uppercase;
+    opacity: 1;
+}
+
+.footer-button {
+    display: flex;
+    flex-direction: row;
+    width: 252px;
+    height: 37px;
+    justify-content: space-between;
+}
+
+.facebook-button {
+    @include footer-button;
+    width: 120px;
+    background: #3371B5 0% 0% no-repeat padding-box;
+}
+
+.google-button {
+    @include footer-button;
+    width: 120px;
+    background: #F5F5F5 0% 0% no-repeat padding-box;
+    color: #0A0102;
+}

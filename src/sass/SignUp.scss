@@ -1,0 +1,41 @@
+.signup-container {
+    display: flex;
+    flex-direction: column;
+    width: 253px;
+    height: 349px;
+    padding: 0px 0px;
+    padding-bottom: 15px;
+    justify-content: space-evenly;
+}
+
+.signup-input {
+    display: flex;
+    flex-direction: column;
+    width: 252px;
+    height: 50px;
+    label {
+        align-self: flex-start;
+        height: 15px;
+        text-align: left;
+        font: normal normal normal 12px Roboto;
+        letter-spacing: 0px;
+        color: #0A0102;
+        text-transform: capitalize;
+        opacity: 1;
+    }
+}
+
+.content-signup-button {
+    height: 37px;
+    width: 252px;
+    background: #A03037 0% 0% no-repeat padding-box;
+    border-radius: 3px;
+    opacity: 1;
+    outline: none;
+    border: none;
+    text-align: center;
+    font: normal normal normal 15px/20px Roboto;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+}

@@ -1,0 +1,123 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+@mixin plainbutton {
+    text-align: left;
+    // font: normal normal medium 25px/33px Roboto;
+    font-size: 25px;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+    opacity: 1;
+    border: none;
+    text-decoration: none;
+    background-color: transparent;
+    outline: none;
+}
+
+@mixin login-signup {
+    display: flex;
+    width: 253px;
+    padding-top: 28px;
+    padding-left: 69px;
+    padding-right: 67px;
+}
+
+.main-container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    // background: #000000 0% 0% no-repeat padding-box;
+    // opacity: 0.31;
+    // background-color: #B0B0B0;
+}
+
+.outer-container {
+    position: relative;
+    top: 166px;
+    left: 320px;
+    width: 727px;
+    height: 425px;
+    opacity: 1;
+}
+
+.image-container {
+    display: flex;
+    position: relative;
+    top: 19px;
+    width: 624px;
+    height: 391px;
+    background: #F5F5F5 0% 0% no-repeat padding-box;
+    border-radius: 21px;
+    opacity: 1;
+}
+
+.image-card {
+    position: relative;
+    top: 52px;
+    left: 53px;
+    width: 245px;
+    height: 245px;
+    background-image: url(../assets/containerCardImage.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-clip: padding-box;
+    opacity: 1;
+    border-radius: 50%;
+}
+
+.image-card-title {
+    position: relative;
+    top: 281px;
+    left: 21.5px;
+    width: 209px;
+    height: 24px;
+    text-align: left;
+    font: normal normal 500 16px/24px Roboto;
+    letter-spacing: 0px;
+    color: #0A0102;
+    text-transform: uppercase;
+    opacity: 1;
+}
+
+.login-signup-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    top: -391px;
+    left: 336px;
+    width: 389px;
+    height: 425px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 5px 15px #00000029;
+    border: 1px solid #E4E4E4;
+    border-radius: 6px;
+    opacity: 1;
+}
+
+.login-signup-header {
+    @include login-signup;
+    flex-direction: row;
+    height: 33px;
+    justify-content: space-between;
+}
+
+.login-button {
+    @include plainbutton;
+    width: 75px;
+    color: #0A0102;
+}
+
+.signup-button {
+    @include plainbutton;
+    width: 95px;
+    color: #878787;
+}
+
+.login-signup-content {
+    @include login-signup;
+    padding-top: 0px;
+    height: 364px;
+}
